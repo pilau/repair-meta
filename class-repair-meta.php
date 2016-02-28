@@ -161,8 +161,7 @@ class Pilau_Repair_Meta {
 	public function admin_init() {
 
 		// Set the path for the backup file
-		$uploads = wp_upload_dir();
-		$this->backup_file_path = trailingslashit( $uploads['path'] ) . 'pilau_repair_meta_old_value.bak';
+		$this->backup_file_path = trailingslashit( WP_CONTENT_DIR ) . 'uploads/' . 'pilau_repair_meta_old_value.bak';
 
 	}
 
